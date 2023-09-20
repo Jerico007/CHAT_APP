@@ -83,7 +83,7 @@
 .chat-container {
   height: 100vh;
   width: 100%;
-  overflow-y:auto;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   padding: 12px;
@@ -127,6 +127,8 @@
 }
 
 .texting-container {
+  position: sticky;
+  bottom: 0%;
   height: 5vw;
   overflow-y: auto;
   width: 100%;
@@ -169,6 +171,8 @@
 
 @media screen and (min-width: 320px) and (max-width: 426px) {
   .texting-container {
+    position: sticky;
+    bottom: 0%;
     height: 20vw;
     width: 100%;
     display: flex;
@@ -204,6 +208,8 @@
 
 @media screen and (min-width: 426px) and (max-width: 700px) {
   .texting-container {
+    position: sticky;
+    bottom: 0%;
     height: 14vw;
     width: 100%;
     display: flex;
@@ -237,37 +243,39 @@
   }
 }
 
-@media screen and (min-width:701px) and (max-width:1000px){
-    .texting-container {
-        height: 10vw;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(77, 72, 72);
-      }
-    
-      #texting-form > input {
-        width: 80vw;
-        height: 5vw;
-        font-family: "Poppins", sans-serif;
-        padding: 12px;
-        font-size: 18px;
-        border-radius: 11px;
-        border: none;
-        outline: none;
-      }
-    
-      #texting-form > button {
-        height: 5vw;
-        border-radius: 11px;
-        border-top-left-radius: 0px;
-        font-size: 18px;
-        border: none;
-        color: white;
-        font-family: "Poppins", sans-serif;
-        background-color: green;
-        cursor: pointer;
-        padding: 5px;
-      }
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+  .texting-container {
+    position: sticky;
+    bottom: 0%;
+    height: 10vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(77, 72, 72);
+  }
+
+  #texting-form > input {
+    width: 80vw;
+    height: 5vw;
+    font-family: "Poppins", sans-serif;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 11px;
+    border: none;
+    outline: none;
+  }
+
+  #texting-form > button {
+    height: 5vw;
+    border-radius: 11px;
+    border-top-left-radius: 0px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    background-color: green;
+    cursor: pointer;
+    padding: 5px;
+  }
 }
