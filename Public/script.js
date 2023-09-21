@@ -31,10 +31,15 @@ textingForm.addEventListener("submit", (e) => {
   };
   Array.from(elements).forEach((val) => {
     if (val.hasAttribute("name")) {
-      userData[val.name] = val.value;
+      userData[val.name] = val.value.trim();
       val.value = "";
     }
   });
+
+  if(userData.message === "")
+  {
+    return ;
+  }
   //Sending to io
   socket.emit("user-message",userData);
   addDatatoUI(userData);
